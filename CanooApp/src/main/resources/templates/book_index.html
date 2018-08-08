@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="bookApp">
+<head>
+	<meta charset="ISO-8859-1">
+	<meta http-equiv="pragma" content="no-cache">
+	<title>Book</title>
+	<script type="text/javascript" src="../angular-1.7.2/angular.min.js"></script>
+	<link href="../bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+	<link href="../bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/book_index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body ng-controller="bookController">
+
+<div id="entete" class="page-header">
+	<h1>Book management</h1> <p/>
+	<a href="#" ng-click="logout()"><span class="glyphicon glyphicon-off">  Logout</span></a>
+</div>
+
+<div id="main">
+ 	<div id="menu">
+  		<a href="#" ng-click="displayListBook()">Display all the books</a> <br/><br/>
+  		<a href="#" ng-click="searchBook('search')">Search book</a> <br/><br/>
+  		<a href="#" ng-click="searchBook('delete')">Delete book</a> <br/><br/>
+  		<a href="#" ng-click="searchBook('update')">Update book</a> <br/><br/>
+		<a href="#" ng-click="bookForm()">Save book</a> <br/>
+ 	</div>
+
+ 	<div id="contenu" ng-include="pageLink"></div>
+</div>
+
+<div id="footer">
+</div>
+
+<script type="text/javascript">
+	angular.module('bookApp',[]);
+</script>
+
+<script src="../js/bookController.js "></script>
+
+</body>
+</html>

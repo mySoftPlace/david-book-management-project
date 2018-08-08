@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="pragma" content="no-cache">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table id="listBook" class="table table-striped">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Pages</th>
+				<th>Date of Publication</th>
+				<th ng-show=action>Action</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr ng-repeat="bk in listBooks">
+				<td>{{bk.bookId}}</td>
+				<td>{{bk.title}}</td>
+				<td>{{bk.author}}</td>
+				<td>{{bk.pages}}</td>
+				<td>{{bk.publicationDate}}</td>
+				<td ng-show=deleteAction><a href="#"
+					ng-click="deleteBook(bk.bookId)"><span
+						class="glyphicon glyphicon-trash"></span></a></td>
+				<td ng-show=updateAction><a href="#"
+					ng-click="editBook(bk.bookId,bk.title,bk.author,bk.pages,bk.publicationDate)">update</a></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

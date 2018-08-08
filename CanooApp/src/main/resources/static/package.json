@@ -1,0 +1,34 @@
+{
+    "name": "reprint-tool",
+    "title": "Reprint Tool",
+    "version": "0.9.6",
+    "author": "Automotive Data Solutions Inc. ",
+    "license": "proprietary",
+    "description": "Allows warehouse users to reprint labels.",
+    "repository": {
+        "type": "git",
+        "url": "git@bitbucket.org:automotivedatasolutions/reprint-tool.git"
+    },
+    "dependencies": {
+        "angular": "^1.6.8",
+        "angular-route": "^1.6.8",
+        "bootstrap": "^3.3.7",
+        "font-awesome": "^4.7.0",
+        "jquery": "^1.9.3",
+        "tether": "^1.4.3"
+    },
+    "devDependencies": {
+        "eslint": "^4.18.1",
+        "eslint-config-standard": "^11.0.0",
+        "eslint-plugin-import": "^2.9.0",
+        "eslint-plugin-node": "^6.0.1",
+        "eslint-plugin-promise": "^3.6.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "gulp": "^3.9.1",
+        "gulp-eslint": "^4.0.2",
+        "gulp-fail": "^1.0.5",
+        "gulp-if": "^2.0.2",
+        "gulp-jshint": "^2.1.0",
+        "jshint": "^2.9.5"
+    }
+}
