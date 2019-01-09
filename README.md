@@ -1,2 +1,32 @@
 # david-book-management-project
 This project is an example of small implementation of book management including Web Services(REST) with Spring boot, Spring Security and Spring data. I used angular JS for the Front-End and HTML, Bootstrap, CSS to build the interfaces.
+
+To test this application:
+
+	1) Right click on the project CanooApp and then:
+	 	Run As --> Maven clean
+	 	Run As --> Maven install
+	 	
+	2) In the class CanooAppApplication.java (which is in the package canoo.app.proj):
+		Right click --> Run As --> Java Application
+		
+	3) On the browser (chrome or firefox...) type:
+		http://localhost:8080/user/book_index
+		You will be invited to Log with Username and Password.
+		There are two users:
+			login: user;   password: 5678
+			this user has no permission to delete a book.
+			
+			login: admin;  password: 1234
+			this user has a permission to delete a book.
+
+	My technology environment:
+		Spring Boot; Spring Data; Spring Security
+		Angular Js
+		Bootstrap
+		HTML
+		CSS
+		Database: Mysql
+		Database name: db_canoo
+	
+	I used jdk-10.0.1
