@@ -23,4 +23,10 @@ public interface BookRepository extends JpaRepository<Book, Long> {
 
 	@Query("from Book b where b.title like %?1%")
 	public List<Book> searchBook(String title);
+	
+	/*@Query("from Book b where b.title like :x")
+	public List<Book> searchBook(@Param("x")String title);*/
+	
+	/*@Query("from Book b where b.title like %?1%")
+	public Page<Book> searchBook(String title, Pageable pageable);*/
 }

@@ -13,8 +13,8 @@ import org.springframework.security.core.userdetails.User.UserBuilder;
  * @author David Sossavi
  * 
  *         To configurate the login to the application for the simple test i
- *         save the users simply in memory I will improve the implementation of
- *         this class by calling users saved in User table for the login
+ *         saved the users simply in memory. I will improve the implementation of
+ *         this class by calling users saved in User table for the login.
  *
  */
 @Configuration

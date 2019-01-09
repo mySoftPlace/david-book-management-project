@@ -33,7 +33,7 @@ angular.module('bookApp').controller('bookController', function ($scope, $http, 
 		});
 	}
 	
-	//The methode searchBook is shared by update, delete and search actions
+	//The method searchBook is shared by update, delete and search actions
 	$scope.searchBook = function (type) {
 		$scope.bookTitle = "";
 		if(type==="delete"){

@@ -8,7 +8,7 @@ import canoo.app.proj.entities.Book;
  * 
  * @author David Sossavi
  * 
- *         Interface for bussiness method
+ *         Interface for bussiness methods
  *
  */
 public interface Ibusiness {

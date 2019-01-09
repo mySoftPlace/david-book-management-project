@@ -27,5 +27,6 @@ This project is an example of small implementation of book management including 
 		HTML
 		CSS
 		Database: Mysql
+		Database name: db_canoo
 	
 	I used jdk-10.0.1
