@@ -27,7 +27,7 @@ angular.module('bookApp').controller('bookController', function ($scope, $http, 
 	$scope.displayBook = function () {
 		$scope.bookTitle = angular.element(document.querySelector('#bookId')).val();
 		$scope.pageLink = "../view/list_book.html";
-		$http.get("http://localhost:8080/user/searchbook/booktitle?booktitle="+$scope.bookTitle)
+		$http.get("http://localhost:8080/user/searchbook?booktitle="+$scope.bookTitle)
 		.then(function(response) {
 			$scope.listBooks = response.data;
 		});
@@ -65,7 +65,7 @@ angular.module('bookApp').controller('bookController', function ($scope, $http, 
 	//Call the web service to delete a book
 	$scope.deleteBook = function (bookId) {
 		$scope.pageLink = "../view/list_book.html";	
-		$http.delete("http://localhost:8080/admin/deletebook/bookId?bookId="+bookId)
+		$http.delete("http://localhost:8080/admin/deletebook?bookId="+bookId)
 		.then(function(response) {
 			$scope.save = "deleted";
 			$scope.pageLink ="../view/display_message.html";

@@ -36,12 +36,12 @@ public class BookServices {
 		return ibusiness.updateBook(book);
 	}
 
-	@RequestMapping(value = "/admin/deletebook/{bookId}", method = RequestMethod.DELETE)
+	@RequestMapping(value = "/admin/deletebook", method = RequestMethod.DELETE)
 	public void deleteBook(@RequestParam("bookId") Long id) {
 		ibusiness.deleteBook(id);
 	}
 
-	@RequestMapping(value = "/user/searchbook/{bookTitle}", method = RequestMethod.GET)
+	@RequestMapping(value = "/user/searchbook", method = RequestMethod.GET)
 	public List<Book> searchBook(@RequestParam("booktitle") String title) {
 		return ibusiness.searchBook(title);
 	}

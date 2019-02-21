@@ -5,8 +5,6 @@ import java.util.Date;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 
 import canoo.app.proj.dao.BookRepository;
 import canoo.app.proj.entities.Book;
